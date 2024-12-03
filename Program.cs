@@ -1,6 +1,7 @@
 ﻿namespace PasswordSecurity;
 
 using System;
+using System.Security.Cryptography;
 
 class Program
 {
