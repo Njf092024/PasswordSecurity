@@ -8,6 +8,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        List<user> users = new List<User>();
+        
         HashingExample hashingExample = new HashingExample();
 
         Console.WriteLine("Enter your username");
