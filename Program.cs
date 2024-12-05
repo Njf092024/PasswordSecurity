@@ -9,7 +9,7 @@ class Program
     static void Main(string[] args)
     {
         List<user> users = new List<User>();
-        
+
         HashingExample hashingExample = new HashingExample();
 
         Console.WriteLine("Enter your username");
@@ -21,6 +21,8 @@ class Program
         Console.WriteLine($"Hello {mockUser}.");
 
         string hashed = hashingExample.ComputeSHA256Hash(mockPassword ?? string.Empty);
+
+        users.Add(new User { Username = mockUser, HashedPassword = hashed });
 
         Console.WriteLine($"Hello {mockUser}. Your password is: {hashed}");
     }
