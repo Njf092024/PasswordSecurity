@@ -26,5 +26,5 @@ class Program
 
 public class HashingExample
 {
-
+    public string ComputeSHA256Hash(string input)
 }
