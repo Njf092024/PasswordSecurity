@@ -48,5 +48,7 @@ public class HashingExample
         }
     }
     public class User
-    
+    {
+        public string? Username { get; set; }
+    }
 }
