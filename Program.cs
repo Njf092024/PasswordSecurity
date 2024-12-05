@@ -47,4 +47,6 @@ public class HashingExample
             return Convert.ToBase64String(hash);
         }
     }
+    public class User
+    
 }
