@@ -11,7 +11,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<user> users = new List<User>();
+        List<User> users = new List<User>();
 
         HashingExample hashingExample = new HashingExample();
 
@@ -20,6 +20,7 @@ class Program
 
         Console.WriteLine("Enter your password");
         string? mockPassword = Console.ReadLine();
+        Console.Clear();
 
         Console.WriteLine($"Hello {mockUser}.");
 
@@ -50,9 +51,11 @@ public class HashingExample
             return Convert.ToBase64String(hash);
         }
     }
+    }
+
     public class User
     {
         public string? Username { get; set; }
         public string? HashedPassword { get; set; }
     }
-}
+
