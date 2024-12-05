@@ -24,6 +24,8 @@ class Program
 
         users.Add(new User { Username = mockUser, HashedPassword = hashed });
 
+        SaveToJSON(users, "user.json");
+
         Console.WriteLine($"Hello {mockUser}. Your password is: {hashed}");
     }
 }
