@@ -28,6 +28,8 @@ class Program
 
         Console.WriteLine($"Hello {mockUser}. Your password is: {hashed}");
     }
+
+    static void SaveToJSON(List<User> users, string filePath)
 }
 
 public class HashingExample
