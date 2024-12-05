@@ -27,4 +27,7 @@ class Program
 public class HashingExample
 {
     public string ComputeSHA256Hash(string input)
+    {
+        using(var sha256 = SHA256.Create())
+    }
 }
