@@ -32,6 +32,7 @@ class Program
     static void SaveToJSON(List<User> users, string filePath)
     {
         string json = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true});
+        File.WriteAllText(filePath, json);
     }
 }
 
