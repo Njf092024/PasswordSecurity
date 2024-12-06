@@ -22,7 +22,6 @@ class Program
         string? mockPassword = Console.ReadLine();
         Console.Clear();
 
-        Console.WriteLine($"Hello {mockUser}.");
 
         string hashed = hashingExample.ComputeSHA256Hash(mockPassword ?? string.Empty);
 
