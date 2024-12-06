@@ -31,7 +31,7 @@ class Program
 
         Console.WriteLine($"Hello {mockUser}. Your password is: {hashed}");
         Console.WriteLine("Press any key to continue...");
-        
+        Console.ReadKey();
         
     }
 
