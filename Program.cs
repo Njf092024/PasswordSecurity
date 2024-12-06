@@ -30,6 +30,9 @@ class Program
         SaveToJSON(users, "user.json");
 
         Console.WriteLine($"Hello {mockUser}. Your password is: {hashed}");
+        Console.WriteLine("Press any key to continue...");
+        
+        
     }
 
     static void SaveToJSON(List<User> users, string filePath)
